@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: regular;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(/assets/fonts/ShortStack-Regular.ttf);
+}
+.street {
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  overflow: hidden;
+  position: relative;
+}
+.street .man {
+  width: 10%;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+.street .man img {
+  width: 100%;
+}
+.street .home {
+  width: 15%;
+  position: absolute;
+  top: 68%;
+  left: 85%;
+}
+.street .home img {
+  width: 100%;
+}
+.street .navigation {
+  position: absolute;
+  top: 70%;
+  left: 8%;
+}
+.street .navigation button {
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 100%;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  transition: 0.5s;
+}
+.street .navigation button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+.street .navigation #down {
+  position: absolute;
+  top: 110%;
+  left: 0;
+}
+.street .navigation #left {
+  position: absolute;
+  top: 110%;
+  left: -120%;
+}
+.street .navigation #right {
+  position: absolute;
+  top: 110%;
+  left: 110%;
+}
+
+.hover {
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+}
+
+.punish {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  width: 20%;
+  display: none;
+}
+.punish img {
+  width: 100%;
+}
+
+#newgame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  padding: 4rem 0;
+  background-color: gold;
+  border-radius: 20px;
+  display: none;
+}
+#newgame h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+#newgame .button {
+  margin: 1.5rem auto 0;
+  display: flex;
+  justify-content: center;
+}
+#newgame .button button {
+  padding: 1.2rem 4rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #42b72a;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#newgame .button button:hover {
+  background-color: #268d12;
+}/*# sourceMappingURL=style.css.map */

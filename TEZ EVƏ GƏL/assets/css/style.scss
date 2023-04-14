@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(/assets/fonts/ShortStack-Regular.ttf);
+}
+
+.street{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    overflow: hidden;
+    position: relative;
+
+    .man{
+        width: 10%;
+        position: absolute;
+        top: 2%;
+        left: 3%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .home{
+        width: 15%;
+        position: absolute;
+        top: 68%;
+        left: 85%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .navigation{
+        position: absolute;
+        top: 70%;
+        left: 8%;
+
+        button{
+            padding: 30px;
+            font-size: 30px;
+            border-radius: 100%;
+            color: white;
+            border: 1px solid black;
+            background-color: black;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: white;
+                border-color: white;
+                color: black;
+            }
+        }
+
+        #down{
+            position: absolute;
+            top: 110%;
+            left: 0;
+        }
+
+        #left{
+            position: absolute;
+            top: 110%;
+            left: -120%;
+        }
+
+        #right{
+            position: absolute;
+            top: 110%;
+            left: 110%;
+        }
+
+    }
+}
+
+.hover{
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+}
+
+.punish{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    width: 20%;
+    display: none;
+
+    img{
+        width: 100%;
+    }
+}
+
+#newgame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%,-50%));
+    width: 30%;
+    padding: 4rem 0;
+    background-color: gold;
+    border-radius: 20px;
+    display: none;
+
+    h1{
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .button{
+        margin: 1.5rem auto 0;
+        display: flex;
+        justify-content: center;
+
+        button{
+            padding: 1.2rem 4rem;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: #42b72a;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: #268d12;
+            }
+        }
+    }
+}
